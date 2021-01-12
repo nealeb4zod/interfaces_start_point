@@ -17,4 +17,22 @@ public class TriathleteTest {
         assertEquals(0, triathlete.getDistanceTravelled());
     }
 
+    @Test
+    public void canRun() {
+        triathlete.run(10);
+        assertEquals(10, triathlete.getDistanceTravelled());
+    }
+
+    @Test
+    public void canSwim() {
+        triathlete.swim(10);
+        assertEquals(10, triathlete.getDistanceTravelled());
+    }
+
+    @Test
+    public void canCycle() {
+        triathlete.cycle(10);
+        assertEquals(10, triathlete.getDistanceTravelled());
+    }
+
 }
